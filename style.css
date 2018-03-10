@@ -1,3 +1,19 @@
+/* Place your styles below */
+body {
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+}
+
+body div {
+  text-align: center;
+  width: 75%;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -5,4 +21,26 @@ html {
   box-sizing: inherit;
 }
 
-/* Place your styles below */
+#main {
+
+}
+
+#quiz-wrapper {
+
+}
+
+#question {
+
+}
+
+#try-again {
+
+}
+
+#form-submit {
+
+}
+
+#result {
+  
+}
