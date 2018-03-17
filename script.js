@@ -37,3 +37,44 @@
     9 to 12 = "You are Mark Sloan"
     5 to 8 = "You are Alex Karev"
     0 to 4 = " You are Christina Yang"
+*/
+
+var personality = null;
+var party-life = null;
+var specialty = null;
+var love = null;
+
+var pageTitle = document.getElementById("page-title");
+var pageTitleText = pageTitle.innerHTML;
+var tryAgain = document.getElementById("try-again");
+var quizWrapper = document.getElementById("quiz-wrapper")
+var result = document.getElementById("result");
+var formSubmit = document.getElementById("form-submit");
+
+tryAgain.addEventListener("click", resetQuiz);
+formSubmit.addEventListener("click", processResults);
+
+function processResults() {
+
+}
+
+function getPersonality() {
+  var score = 0;
+  if(personality.id === "steamy") {
+    score += 3;
+  } else if(personality.id === "dreamy") {
+    score += 0;
+  } else if(personality.id === "nasty") {
+    score += 4;
+  } else if(personality.id === "hotty") {
+    score += 1;
+  } else if(personality.id === "lovely") {
+    score += 2;
+  } else if(personality.id === "sexy") {
+    score += 3;
+  }
+}
+
+function resetQuiz() {
+
+}

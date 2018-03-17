@@ -17,8 +17,18 @@ body div {
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+header, main {
+  display: flex;
+  text-align: center;
+}
+
+h2 {
+  flex-basis: 100%
+  font: 2em;
 }
 
 #main {
@@ -26,21 +36,53 @@ html {
 }
 
 #quiz-wrapper {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #question {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 75%
 }
 
 #try-again {
-
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  width: 200px;
+  height: 50px;
+  display: none;
 }
 
 #form-submit {
-
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  width: 200px;
+  height: 50px;
 }
 
 #result {
-  
+  display: none;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 }
+
+input {
+  text-align: left;
+}
+
+@media screen and (max-width:768px){
+  #quiz-wrapper{
+    flex-direction: row;
+  }
+ }
